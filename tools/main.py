@@ -41,3 +41,24 @@ print(dict[2])
 print(tiny_dict)
 print(tiny_dict.keys())
 # type()和instance()
+
+# 定义函数
+def sum(a, b):
+    return a + b
+
+result = sum(2, 3)
+
+print('sum:', result)
+
+class Animal:
+    def __init__(self, name):
+        print("Animal-init")
+        self.display_name = name
+
+    def getDisplayName(self):
+        return self.display_name
+
+animal = Animal('animal')
+name = animal.getDisplayName()
+print("name======>", name, Animal.__class__)
+
